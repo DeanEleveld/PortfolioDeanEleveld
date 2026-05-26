@@ -1,12 +1,11 @@
 :root {
-  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --header-bg-color: rgba(8, 8, 8, 1);
-  --main-text-color: rgba(156, 156, 156, 1);
-  --header-nav-bg-color: rgba(27, 27, 27, 1);
-  --name-text-color: white;
-  --started-btn-color: rgba(63, 142, 0, 1);
-  --started-btn-shadow: rgba(98, 186, 27, 1);
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --header-bg-color: #caf0f8;
+  --main-text-color: black;
+  --header-nav-bg-color: #0077b6;
+  --name-text-color: black;
+  --started-btn-color: #00b4d8;
+  --started-btn-shadow: #90e0ef;
   --first-btn-color: rgba(255, 162, 23, 1);
   --first-category-color: rgba(255, 246, 233, 1);
   --second-btn-color: rgba(0, 10, 255, 1);
@@ -47,8 +46,7 @@ p {
   display: flex;
   justify-content: space-evenly;
   background-color: var(--header-nav-bg-color);
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
   align-items: center;
   border-radius: 5px;
   flex-wrap: wrap;
@@ -92,7 +90,7 @@ p {
 .header-company {
   grid-row: 3 / 4;
   grid-column: 1 / 3;
-  color: var(--main-text-color);
+  color: var(--main-text-color)
 }
 
 .header-info-btn > button {
@@ -125,19 +123,24 @@ p {
 .header-company {
   width: 80%;
   margin-left: 10%;
+    margin-top: 50px
 }
 
 .company-logo-container {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 .company-logo-container div {
-  background-color: var(--header-nav-bg-color);
+  background-color: white;
   padding: 3rem;
   margin-top: 2rem;
   border-radius: 5px;
+    border: 5px solid var(--started-btn-color);
+    color: white;
 }
 
 .case-work-container {
@@ -385,4 +388,14 @@ input,
 .footer span {
   color: red;
   font-size: 1.5rem;
+}
+
+.footer button {
+    background-color: var(--started-btn-color);
+    color: var(--name-text-color);
+    border: none;
+    padding: 1rem 3rem;
+    margin-top: 2%;
+    box-shadow: 0px 3px 10px 0px var(--started-btn-shadow);
+    cursor: pointer;
 }
