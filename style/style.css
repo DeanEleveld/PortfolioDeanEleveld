@@ -36,7 +36,7 @@ p {
 .header {
   background-color: var(--header-bg-color);
   display: grid;
-  grid-template-rows: 0.5fr 2fr 1fr;
+  grid-template-rows: 0.3fr 1fr 1fr;
   grid-template-columns: 2fr 1fr;
 }
 
@@ -189,8 +189,8 @@ p {
 }
 
 .case-first-text div:first-child {
-  background-color: var(--first-category-color);
-  color: var(--first-btn-color);
+  background-color: var(--second-category-color);
+  color: var(--second-btn-color);
 }
 
 .case-first-image,
@@ -215,8 +215,8 @@ p {
 }
 
 .case-third-category {
-  background-color: var(--third-category-color);
-  color: var(--third-btn-color);
+    background-color: var(--second-category-color);
+    color: var(--second-btn-color);
 }
 
 .testimonial {
@@ -289,7 +289,7 @@ p {
 
 .recent-main {
   display: grid;
-  grid-template-columns: 0.5fr repeat(2, 2fr) 0.5fr;
+  grid-template-columns: 0.5fr repeat(2, 3fr) 0.5fr;
 }
 
 .middle-margin {
@@ -305,7 +305,7 @@ p {
 
 .recent-image {
   padding: 12rem;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: var(--header-nav-bg-color);
 }
 

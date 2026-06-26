@@ -10,7 +10,7 @@ document.getElementById('projecten').addEventListener('click', function() {
         block: 'start'
     });
 });
-document.getElementById('recent').addEventListener('click', function() {
+document.getElementById('hobby').addEventListener('click', function() {
     document.getElementById('doelRecent').scrollIntoView({
         behavior: 'smooth',
         block: 'start'
